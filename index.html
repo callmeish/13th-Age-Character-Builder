@@ -1,28 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>
-    13th Age Character Creator
+    13th Age Character Builder
   </title>
   <link rel="shortcut icon" href="favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
 <body>
   <header>
     <span>
-      <h1>13th Age Character Creator</h1>
+      <h1 class="font-weight-bolder">13th Age Character Builder</h1>
     </span>
   </header>
   <!-- left-hand navigation / menu -->
     <div class="menu">
       <ul>
-        <li><button id='home'>How to Use this Site</button></li>
-        <li><button id='legal' onclick="changeContents(this.id)">Legal Information</button></li>
-        <li><button id='overview' onclick="changeContents(this.id)">Character Creation</button></li>
+        <li><button id="home">How to Use this Site</button></li>
+        <li><button id="legal">Legal Information</button></li>
+        <li><button id="overview">Character Creation</button></li>
+          <li><button id="races">&emsp;Races</button></li>
+          <li><button id="classes">&emsp;Classes</button></li>
+          <li><button id="abilities">&emsp;Ability Scores</button></li>
+          <li><button id="powers">&emsp;Abilities and Powers</button></li>
+          <li><button id="backgrounds">&emsp;Backgrounds</button></li>
+          <li><button id="feats">&emsp;Feats</button></li>
+          <li><button id="equipment">&emsp;Equipment</button></li>
+          <li><button id="details">&emsp;Personal Details</button></li>
+          <li><button id="unique">&emsp;Unique Thing</button></li>
+          <li><button id="icons">&emsp;Icon Relationships</button></li>
+        <li><button id="sheet">Character Sheet</button></li>
       </ul>
     </div>
   <!-- main contents -->
   <div class="contentPane"></div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="js/menu.js"></script>
 </body>
 </html>
