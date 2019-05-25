@@ -79,6 +79,11 @@ ul {
   list-style-type: square;
 }
 
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
 table.line {
   height: 4px;
   width: 100%;
