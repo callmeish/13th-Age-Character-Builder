@@ -50,6 +50,7 @@ h5 {
 }
 h1, h2, h3, h4, h5 {
   color: #8587AD;
+  font-weight: bold;
 }
 h2, h4, h5, h7 {
   margin-top: 1em;

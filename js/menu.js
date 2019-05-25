@@ -15,6 +15,12 @@ $(function(){
     link = jQuery(document.getElementById(id));
     link.parent().addClass('selected');
     
+    var module = 'modules/' + id + '.html';
+    $('title').load(module + ' title', '', function() {
+      document.title = $(this).text();
+      $(".contentPane").load(module + ' .main');
+    });
+    
     window.location.hash = id;
   };
   
