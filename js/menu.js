@@ -18,9 +18,9 @@ $(function(){
     var module = 'modules/' + id + '.html';
     $('title').load(module + ' title', '', function() {
       document.title = $(this).text();
-      $(".contentPane").load(module + ' .main');
+      $('.contentPane').load(module + ' .main', populate());
     });
-    
+
     window.location.hash = id;
   };
   
