@@ -30,17 +30,21 @@ header h1 {
   padding-top: 7px;
   padding-left: 25px;
 }
+
 h2 {
   font-size: 12pt;
   font-style: italic;
 }
+
 h2:first-letter { 
   font-size: 2em;
 }
+
 h3 {
   font-size: 12pt;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5em; 
 }
+
 h4 { 
   font-size: 10pt;
 }
@@ -216,4 +220,36 @@ table td.line {
 .menu ul li:hover {
   position:relative;
   z-index:90;
+}
+
+.hover-notice {
+  font-size: 8pt;
+  
+  margin: 3px;
+
+  border-bottom: 1px dotted black;
+
+  vertical-align: sub;
+}
+
+.ability {
+  font-size: 15pt;
+  font-weight: bold;
+
+  background-color: #F0F0F0;
+
+  padding: 5px;
+  margin: 1px;
+
+  border: 1px solid #DDD;
+}
+
+.centered-items {
+  position: relative;
+  
+  align-items: center;
+}
+
+.horz-centered {
+  text-align: center;
 }
