@@ -12,9 +12,8 @@ var populate = function() {
     }
   })($('.d-flex')[0]);
 
-  var div; //div declared in this scope to avoid synchronicity issues in following loop
-  for (var i = 0; i < gridItems.length ; i++) {
-    var item = gridItems[i], expandButton, selectButton, expandedInfo;
+  gridItems.forEach(function (item) {
+    var expandButton, selectButton, expandedInfo, div;
     $.getJSON('data/' + item + '.json', function (itemJSON) {
       div = document.createElement('div');
       div.classList.add($('.d-flex')[0].id + 'Box');
@@ -71,5 +70,5 @@ var populate = function() {
 
       $('.d-flex')[0].appendChild(div);
     });
-  };
+  });
 };
