@@ -1,11 +1,9 @@
 {
-  "name": "Aasimar",
-  "blurb": "Humans with some trace of celestial blood in their veins.",
-  "desc": null,
-  "raceBonus1": "WIS",
-  "raceBonus2": "CHA",
-  "racePowerName": "Halo",
-  "racePowerDesc": "Once per battle as a free action during your turn, gain a +2 bonus to all defenses until you are hit by an attack (or until the battle ends).",
-  "passiveName": null,
-  "passiveDesc": null
+  "name": "Beastblooded",
+  "blurb": "Descendants of lycanthropes, with the blood of beasts still in their veins.",
+  "raceBonus1": "DEX",
+  "raceBonus2": "CON",
+  "racePowerName": "Bestial Fury",
+  "racePowerDesc": "Once per battle when you hit an enemy with an attack, you may deal extra damage to them equal to your level times the escalation die.",
+  "racePowerAdvFeat": "The first time you use bestial fury each battle, heal hp equal to the extra damage you deal."
 }

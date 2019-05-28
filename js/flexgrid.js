@@ -1,4 +1,4 @@
-var races = ['aasimar', 'alleykin', 'arcanite', 'beastblooded', 'darkelf', 'dragonspawn', 'dwarf', 'forgeborn', 'gnome', 'halfelf', 'halforc', 'halfling', 'highelf', 'human', 'lizardfolk', 'unholyone', 'spiritborn', 'tiefling', 'woodelf'];
+var races = ['aasimar', 'alleykin', 'arcanite', 'beastblooded', 'darkelf', 'dragonspawn', 'dwarf', 'forgeborn', 'gnome', 'halfelf', 'halforc', 'halfling', 'highelf', 'human', 'lizardfolk', 'spiritborn', 'tiefling', 'unholyone', 'woodelf'];
 
 var populate = function() {
   var gridItems = (function (container) {
@@ -12,8 +12,9 @@ var populate = function() {
     }
   })($('.d-flex')[0]);
 
+  var div; //div declared in this scope to avoid synchronicity issues in following loop
   for (var i = 0; i < gridItems.length ; i++) {
-    var item = gridItems[i], div, expandButton, selectButton, expandedInfo;
+    var item = gridItems[i], expandButton, selectButton, expandedInfo;
     $.getJSON('data/' + item + '.json', function (itemJSON) {
       div = document.createElement('div');
       div.classList.add($('.d-flex')[0].id + 'Box');
@@ -53,12 +54,18 @@ var populate = function() {
 
       expandedInfo = document.createElement('div');
       expandedInfo.classList.add('expInfo');
-      expandedInfo.innerHTML =
-        '<h4>Aasimar</h4>' +
-        '<p>Ability Score Bonus: +2 ' + itemJSON.raceBonus1 + ' or +2 ' + itemJSON.raceBonus2 + '</p>' +
-        '<p>Racial Power - ' + itemJSON.racePowerName + ': ' + itemJSON.racePowerDesc + '</p>';
+      expandedInfo.innerHTML = '<h4>' + itemJSON.name + '</h4>';
+      if (itemJSON.name == "Human") {
+        expandedInfo.innerHTML += '<p>Ability Score Bonus: +2 Any</p>';
+      } else {
+        expandedInfo.innerHTML += '<p>Ability Score Bonus: +2 ' + itemJSON.raceBonus1 + ' or +2 ' + itemJSON.raceBonus2 + '</p>';
+      }
+      expandedInfo.innerHTML += '<p>Racial Power - ' + itemJSON.racePowerName + ': ' + itemJSON.racePowerDesc + '</p>';
       if (itemJSON.passiveName) {
         expandedInfo.innerHTML += '<p>Passive - ' + itemJSON.passiveName + ': ' + itemJSON.passiveDesc + '</p>';
+      }
+      if (itemJSON.racePowerAdvFeat) {
+        expandedInfo.innerHTML += '<p><i>Adventurer Feat</i>: ' + itemJSON.racePowerAdvFeat + '</p>';
       }
       div.appendChild(expandedInfo);
 

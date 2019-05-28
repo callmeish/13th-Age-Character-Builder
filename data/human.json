@@ -1,0 +1,10 @@
+{
+  "name": "Human",
+  "blurb": "The versatile everyman",
+  "raceBonus1": "Any",
+  "raceBonus2": null,
+  "racePowerName": "Quick to Fight",
+  "racePowerDesc": "At the start of each battle, roll initiative twice and choose the result you want.",
+  "passiveName": "Bonus Feat",
+  "passiveDesc": "Humans start with an additional adventurer feat at 1st level."
+}

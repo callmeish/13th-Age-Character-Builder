@@ -1,11 +1,8 @@
 {
-  "name": "Aasimar",
-  "blurb": "Humans with some trace of celestial blood in their veins.",
-  "desc": null,
-  "raceBonus1": "WIS",
+  "name": "Half-elf",
+  "blurb": "Half human, half elf.",
+  "raceBonus1": "CON",
   "raceBonus2": "CHA",
-  "racePowerName": "Halo",
-  "racePowerDesc": "Once per battle as a free action during your turn, gain a +2 bonus to all defenses until you are hit by an attack (or until the battle ends).",
-  "passiveName": null,
-  "passiveDesc": null
+  "racePowerName": "Surprising",
+  "racePowerDesc": "Once per battle, subtract one from the natural result of one of your own d20 rolls."
 }

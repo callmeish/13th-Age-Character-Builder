@@ -1,0 +1,9 @@
+{
+  "name": "Lizardfolk",
+  "blurb": "Scaly savages native to the swamplands.",
+  "raceBonus1": "DEX",
+  "raceBonus2": "CON",
+  "racePowerName": "Frenzy",
+  "racePowerDesc": "Once per battle, as a quick action, you may make the following attack:</p><p style='text-align: left;text-indent: -5px;padding-left: 5px'><b>Special</b>: You can make a number of attacks equal to the escalation die, but may only target a single creature with half of the potential attacks (rounded up).<br/><span style='position: relative;left: -5px'><b>Target</b>: One creature engaged with you<br/><b>Attack</b>: 6 + your level vs. AC<br/><b>Hit</b>: 1d8 X your level damage.<br/><b>Miss</b>: You take damage equal to your level.</span>",
+  "racePowerAdvFeat": "Once per day when grabbed or stuck, you can spend a recovery without gaining hp to end that condition on yourself."
+}

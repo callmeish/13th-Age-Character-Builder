@@ -1,0 +1,8 @@
+{
+  "name": "High Elf",
+  "blurb": "Elven nobility, with magic running in their veins.",
+  "raceBonus1": "INT",
+  "raceBonus2": "CHA",
+  "racePowerName": "Highblood Teleport",
+  "racePowerDesc": "Once per battle as a move action, place yourself in a nearby location you can see."
+}

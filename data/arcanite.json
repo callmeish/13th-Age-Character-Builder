@@ -1,11 +1,9 @@
 {
-  "name": "Aasimar",
-  "blurb": "Humans with some trace of celestial blood in their veins.",
-  "desc": null,
-  "raceBonus1": "WIS",
+  "name": "Arcanite",
+  "blurb": "Humans warped, augmented, or transformed by too much arcane power.",
+  "raceBonus1": "INT",
   "raceBonus2": "CHA",
-  "racePowerName": "Halo",
-  "racePowerDesc": "Once per battle as a free action during your turn, gain a +2 bonus to all defenses until you are hit by an attack (or until the battle ends).",
-  "passiveName": null,
-  "passiveDesc": null
+  "racePowerName": "Arcane Attunement",
+  "racePowerDesc": "Once per battle, before you make a saving throw against a magical effect, OR just after the battle, when you roll to recharge for a spell or magic item recharge, you may choose to roll two d20s instead of one and pick the best result.",
+  "racePowerAdvFeat": "You may cast the wizard spell counter-magic twice per day, using your highest ability score in place of Intelligence and your level (or one lower) as the level of the spell."
 }

@@ -1,11 +1,8 @@
 {
-  "name": "Aasimar",
-  "blurb": "Humans with some trace of celestial blood in their veins.",
-  "desc": null,
-  "raceBonus1": "WIS",
+  "name": "Dragonspawn",
+  "blurb": "Draconic humanoids torn between the Great Gold Wyrm and the Three.",
+  "raceBonus1": "STR",
   "raceBonus2": "CHA",
-  "racePowerName": "Halo",
-  "racePowerDesc": "Once per battle as a free action during your turn, gain a +2 bonus to all defenses until you are hit by an attack (or until the battle ends).",
-  "passiveName": null,
-  "passiveDesc": null
+  "racePowerName": "Breath Weapon",
+  "racePowerDesc": "Once per battle, make a close-quarters breath weapon attack as a quick action using your highest ability score against one nearby enemy’s Physical Defense. On a hit, the attack deals 1d6 damage per your level of an energy type that makes sense for your character."
 }
