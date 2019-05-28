@@ -22,7 +22,14 @@ $(function(){
     var module = 'modules/' + id + '.html';
     $('title').load(module + ' title', '', function() {
       document.title = $(this).text();
-      $('.contentPane').load(module + ' .main', '', populate);
+      $('.contentPane').load(module + ' .main', () => {
+        if (id == 'races') {
+          return populate();
+        }
+        else if (id == 'abilities') {
+          return init_abilities();
+        }
+      });
     });
   };
   
