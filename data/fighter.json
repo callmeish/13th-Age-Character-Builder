@@ -1,0 +1,9 @@
+{
+  "name": "Fighter",
+  "blurb": "Martial paragons, masters of both bow and blade.",
+  "classBonus1": "STR",
+  "classBonus2": "CON",
+  "writeup": "The grit and guts it takes to be a true fighter may be as rare and magical as the brains and arcane spark it takes to be a wizard. Plenty of poor slobs all across the world get pressed into military duty, and some fighters start that way, but there’s more to a true fighter than that: skill, discipline, toughness, and an uncanny ability to get in harm’s way . . . with a double dose of harm for the other guy.",
+  "backgrounds": "swordmaster, mercenary captain, sea raider, shieldwall spearman, explorer, bouncer, thug, city guardsman, former gladiator, former orc captive, bankrupt nobleman, duelist, and goblin-hunter.",
+  "link": "http://www.13thagesrd.com/classes/fighter/"
+}

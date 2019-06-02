@@ -1,0 +1,9 @@
+{
+  "name": "Cleric",
+  "blurb": "Holy healers with the ability to invoke the power of the gods",
+  "classBonus1": "WIS",
+  "classBonus2": "STR",
+  "writeup": "All mortals call on the gods, but when a cleric calls, the gods sometimes listen.",
+  "backgrounds": "healer, archivist, military chaplain, temple guard, bartender, reformed thief, dwarven hierophant, initiate, and bishop.",
+  "link": "http://www.13thagesrd.com/classes/cleric/"
+}

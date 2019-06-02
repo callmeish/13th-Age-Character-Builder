@@ -1,4 +1,5 @@
 var races = ['aasimar', 'alleykin', 'arcanite', 'beastblooded', 'darkelf', 'dragonspawn', 'dwarf', 'forgeborn', 'gnome', 'halfelf', 'halforc', 'halfling', 'highelf', 'human', 'lizardfolk', 'spiritborn', 'tiefling', 'unholyone', 'woodelf'];
+var classes = ['barbarian', 'bard', 'chaosmage', 'cleric', 'commander', 'druid', 'fighter', 'monk', 'necromancer', 'occultist', 'paladin', 'ranger', 'rogue', 'sorcerer', 'wizard'];
 
 var populate = function() {
   var gridItems = (function (container) {
@@ -7,6 +8,8 @@ var populate = function() {
     switch (container.id) {
       case 'races':
         return races;
+      case 'classes':
+        return classes;
       default:
         return [];
     }
@@ -37,7 +40,7 @@ var populate = function() {
       expandButton.title = itemJSON.name + ' Detailed Info';
       expandButton.setAttribute('data-toggle', 'tooltip');
       expandButton.innerHTML = '<img src="menu.png" height="25px" width="25px"></img>';
-      expandButton.onclick = function () {
+      $(expandButton).click(function (event) {
         var flag = $(this).parent().hasClass('selectedBox')
         $('.visible').removeClass('visible');
         $('.selectedBox').removeClass('selectedBox');
@@ -45,7 +48,12 @@ var populate = function() {
           $(this).siblings('.expInfo').addClass('visible');
           $(this).parent().addClass('selectedBox');
         };
-      };
+        event.stopPropagation();
+      });
+      $('body').click(function () {
+        $('.visible').removeClass('visible');
+        $('.selectedBox').removeClass('selectedBox');
+      });
       div.appendChild(expandButton);
 
       $(selectButton).tooltip();
@@ -54,18 +62,25 @@ var populate = function() {
       expandedInfo = document.createElement('div');
       expandedInfo.classList.add('expInfo');
       expandedInfo.innerHTML = '<h4>' + itemJSON.name + '</h4>';
-      if (itemJSON.name == "Human") {
-        expandedInfo.innerHTML += '<p>Ability Score Bonus: +2 Any</p>';
-      } else {
-        expandedInfo.innerHTML += '<p>Ability Score Bonus: +2 ' + itemJSON.raceBonus1 + ' or +2 ' + itemJSON.raceBonus2 + '</p>';
-      }
-      expandedInfo.innerHTML += '<p>Racial Power - ' + itemJSON.racePowerName + ': ' + itemJSON.racePowerDesc + '</p>';
-      if (itemJSON.passiveName) {
-        expandedInfo.innerHTML += '<p>Passive - ' + itemJSON.passiveName + ': ' + itemJSON.passiveDesc + '</p>';
-      }
-      if (itemJSON.racePowerAdvFeat) {
-        expandedInfo.innerHTML += '<p><i>Adventurer Feat</i>: ' + itemJSON.racePowerAdvFeat + '</p>';
-      }
+      if ($('.d-flex')[0].id == "races") {
+        if (itemJSON.name == "Human") {
+          expandedInfo.innerHTML += '<p>Ability Score Bonus: +2 Any</p>';
+        } else {
+          expandedInfo.innerHTML += '<p>Ability Score Bonus: +2 ' + itemJSON.raceBonus1 + ' or +2 ' + itemJSON.raceBonus2 + '</p>';
+        };
+        expandedInfo.innerHTML += '<p>Racial Power - ' + itemJSON.racePowerName + ': ' + itemJSON.racePowerDesc + '</p>';
+        if (itemJSON.passiveName) {
+          expandedInfo.innerHTML += '<p>Passive - ' + itemJSON.passiveName + ': ' + itemJSON.passiveDesc + '</p>';
+        };
+        if (itemJSON.racePowerAdvFeat) {
+          expandedInfo.innerHTML += '<p><i>Adventurer Feat</i>: ' + itemJSON.racePowerAdvFeat + '</p>';
+        };
+      } else if ($('.d-flex')[0].id == "classes") {
+        expandedInfo.innerHTML += '<p>Ability Score Bonus: +2 ' + itemJSON.classBonus1 + ' or +2 ' + itemJSON.classBonus2 + '</p>';
+        expandedInfo.innerHTML += '<p><i>' + itemJSON.writeup + '</i></p>';
+        expandedInfo.innerHTML += '<p>Possible ' + itemJSON.name.toLowerCase() + ' backgrounds include: ' + itemJSON.backgrounds + '</p>';
+        expandedInfo.innerHTML += '<p>For more details please see <a href="' + itemJSON.link + '">the 13th Age SRD</a>.</p>';
+      };
       div.appendChild(expandedInfo);
 
       $('.d-flex')[0].appendChild(div);

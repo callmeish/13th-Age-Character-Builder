@@ -23,11 +23,10 @@ $(function(){
     $('title').load(module + ' title', '', function() {
       document.title = $(this).text();
       $('.contentPane').load(module + ' .main', () => {
-        if (id == 'races') {
-          return populate();
-        }
-        else if (id == 'abilities') {
+        if (id == 'abilities') {
           return init_abilities();
+        } else {
+          return populate();
         }
       });
     });
