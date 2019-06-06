@@ -14,7 +14,7 @@ $(function(){
     var module = 'modules/' + id + '.html';
     $('title').load(module + ' title', '', function() {
       document.title = $(this).text();
-      $('.contentPane').load(module + ' .main', () => {
+      $('.contentPane').load(module + ' .main', '', function() {
         var selected = document.getElementsByClassName('selected');
         for (i = 0; i < selected.length; i++) {
           selected[i].classList.remove('selected');
@@ -24,10 +24,15 @@ $(function(){
         link.parent().addClass('selected');
 
         if (id == 'abilities') {
-          return init_abilities();
-        } else {
-          return populate();
-        }
+          init_abilities();
+        } else if (id == 'races' || id == 'classes') {
+          populate();
+        } else if (id == 'backgrounds') {
+          var tmpClass = JSON.parse(window.sessionStorage.class);
+          if (tmpClass) {
+            $('.classBackgrounds').html("<p>A few possible backgrounds for " + tmpClass.name + "s include: " + tmpClass.backgrounds + "</p>");
+          };
+        };
       });
     });
   };

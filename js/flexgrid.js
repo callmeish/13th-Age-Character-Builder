@@ -35,11 +35,11 @@ var populate = function() {
       selectButton.onclick = function () {
         switch (window.location.hash.substr(1)) {
           case 'races':
-            window.sessionStorage.race = itemJSON;
+            window.sessionStorage.race = JSON.stringify(itemJSON);
             window.location.hash = 'classes';
             break;
           case 'classes':
-            window.sessionStorage.class = itemJSON;
+            window.sessionStorage.class = JSON.stringify(itemJSON);
             window.location.hash = 'abilities';
             break;
           default:
