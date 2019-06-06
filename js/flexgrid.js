@@ -28,9 +28,23 @@ var populate = function() {
       selectButton.classList.add('selectButton');
       selectButton.title = itemJSON.blurb;
       selectButton.setAttribute('data-toggle', 'tooltip');
+      $('[data-toggle="tooltip"]').on('click', function () {
+        $(this).tooltip('hide')
+      });
       selectButton.innerHTML = itemJSON.name;
       selectButton.onclick = function () {
-        
+        switch (window.location.hash.substr(1)) {
+          case 'races':
+            window.sessionStorage.race = itemJSON;
+            window.location.hash = 'classes';
+            break;
+          case 'classes':
+            window.sessionStorage.class = itemJSON;
+            window.location.hash = 'abilities';
+            break;
+          default:
+            window.location.hash = 'home';
+        }
       };
       div.appendChild(selectButton);
 
@@ -79,7 +93,7 @@ var populate = function() {
         expandedInfo.innerHTML += '<p>Ability Score Bonus: +2 ' + itemJSON.classBonus1 + ' or +2 ' + itemJSON.classBonus2 + '</p>';
         expandedInfo.innerHTML += '<p><i>' + itemJSON.writeup + '</i></p>';
         expandedInfo.innerHTML += '<p>Possible ' + itemJSON.name.toLowerCase() + ' backgrounds include: ' + itemJSON.backgrounds + '</p>';
-        expandedInfo.innerHTML += '<p>For more details please see <a href="' + itemJSON.link + '">the 13th Age SRD</a>.</p>';
+        expandedInfo.innerHTML += '<p>For more details please see <a href="' + itemJSON.link + '" target="_blank">the 13th Age SRD</a>.</p>';
       };
       div.appendChild(expandedInfo);
 
