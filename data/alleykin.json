@@ -1,10 +1,9 @@
 {
   "name": "Alleykin",
-  "blurb": "Aasimar are humans with some trace of celestial blood in their veins. They are usually tall, good-looking, and generally pleasant. Some have a minor physical trait suggesting their heritage, such as silver hair, golden eyes, or an unnaturally intense stare.",
-  "raceBonus1": "WIS",
+  "blurb": "Humanoid cats, most commonly found on the fringes of society in large cities.",
+  "raceBonus1": "DEX",
   "raceBonus2": "CHA",
-  "racePowerName": "Halo",
-  "racePowerDesc": "Once per battle as a free action during your turn, gain a +2 bonus to all defenses until you are hit by an attack (or until the battle ends).",
-  "passiveName": "",
-  "passiveDesc": ""
+  "racePowerName": "Elusive",
+  "racePowerDesc": "Once per battle, reduce the damage you take from an attack by 1d6 per level. Then deal that much damage to one enemy engaged with you.",
+  "racePowerAdvFeat": "You take half damage from falls."
 }

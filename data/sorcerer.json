@@ -1,0 +1,9 @@
+{
+  "name": "Sorcerer",
+  "blurb": "Mages whose power flows from within.",
+  "classBonus1": "CHA",
+  "classBonus2": "CON",
+  "writeup": "Wizards say that a sorcerer doesn’t so much cast a spell as uncork it. Elves say you never talk to the same sorcerer twice, and dwarves say not even once.",
+  "backgrounds": "tribal shaman, pirate captain, spell-arena gladiator, failed wizard, and sahuagin hunter",
+  "link": "http://www.13thagesrd.com/classes/sorcerer/"
+}

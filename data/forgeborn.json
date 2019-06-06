@@ -1,11 +1,8 @@
 {
-  "name": "Aasimar",
-  "blurb": "Humans with some trace of celestial blood in their veins.",
-  "desc": null,
-  "raceBonus1": "WIS",
-  "raceBonus2": "CHA",
-  "racePowerName": "Halo",
-  "racePowerDesc": "Once per battle as a free action during your turn, gain a +2 bonus to all defenses until you are hit by an attack (or until the battle ends).",
-  "passiveName": null,
-  "passiveDesc": null
+  "name": "Forgeborn",
+  "blurb": "Mechanical servitors of the dwarves.",
+  "raceBonus1": "STR",
+  "raceBonus2": "CON",
+  "racePowerName": "Never Say Die",
+  "racePowerDesc": "Whenever you drop to 0 hp or below, roll a normal save if you have a recovery available. On an 11+, instead of falling unconscious, you stay on your feet and can heal using a recovery. Add the recovery hit points to 0 hp to determine your hp total."
 }

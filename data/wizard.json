@@ -1,0 +1,9 @@
+{
+  "name": "Wizard",
+  "blurb": "Mages that derive power from extensive esoteric knowledge.",
+  "classBonus1": "INT",
+  "classBonus2": "WIS",
+  "writeup": "Wizards are the masters of arcane energy. They use geometry, symbology, occult numerology, and a complex grammatical system to describe magic and thereby control it. They fill their heavy, locked spellbooks with crabbed writing, secret codes, and convoluted designs. Many “book-wizards” are more-or-less cowards who would rather study reality than experience it. The wizards that go adventuring are the rare sort who respond to mortal danger with greater focus rather than panic.",
+  "backgrounds": "magical prodigy, spell thief, hedge wizard, transformed familiar, ship’s wizard, and royal poisoner.",
+  "link": "http://www.13thagesrd.com/classes/wizard/"
+}

@@ -1,11 +1,10 @@
 {
-  "name": "Aasimar",
-  "blurb": "Humans with some trace of celestial blood in their veins.",
-  "desc": null,
-  "raceBonus1": "WIS",
-  "raceBonus2": "CHA",
-  "racePowerName": "Halo",
-  "racePowerDesc": "Once per battle as a free action during your turn, gain a +2 bonus to all defenses until you are hit by an attack (or until the battle ends).",
-  "passiveName": null,
-  "passiveDesc": null
+  "name": "Gnome",
+  "blurb": "Small folk who live underground and posses a talent for magic.",
+  "raceBonus1": "DEX",
+  "raceBonus2": "INT",
+  "racePowerName": "Confounding",
+  "racePowerDesc": "Once per battle, when you roll a natural 16+ with an attack, you can also daze the target until the end of your next turn.",
+  "passiveName": "Minor Illusions",
+  "passiveDesc": "As a standard action, at-will, you can create a strong smell or a sound nearby. Nearby creatures that fail a normal save notice the smell or sound. Creatures that make the save may notice it but recognize it as not exactly real. In addition, you gain a +2 bonus to AC against opportunity attacks."
 }

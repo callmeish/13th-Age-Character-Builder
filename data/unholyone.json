@@ -1,0 +1,9 @@
+{
+  "name": "Unholy One",
+  "blurb": "Humans corrupted by dark gods.",
+  "raceBonus1": "STR",
+  "raceBonus2": "CHA",
+  "racePowerName": "Drain",
+  "racePowerDesc": "Once per battle, when you heal using a recovery, you may activate this power as a free action. One random nearby enemy loses hp equal to 1d4 time your level, and you regain half that many hp in addition to the hp gained from the recovery. This damage can’t kill the enemy; if they would drop to 0 hp, they drop to 1 hp instead.",
+  "racePowerAdvFeat": "When you reduce a non-mook enemy to 0 hp with an attack, the closest nearby staggered enemy with fewer hp than you is dazed until the end of its next turn."
+}

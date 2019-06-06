@@ -1,0 +1,9 @@
+{
+  "name": "Ranger",
+  "blurb": "Far-roaming warriors at home in the wilds.",
+  "classBonus1": "STR, +2 DEX,",
+  "classBonus2": "WIS",
+  "writeup": "Some rangers get their training in an official ranger corps, serving the Emperor or another legitimate authority. Others are initiates into half-wild gangs, resourceful nomads who know more ancient secrets than their rough manner might suggest. Rangers from different lands or traditions respect each other, though they can still be ruthless rivals. In the wilderness, rangers are held in awe, provided the common people even know they’re there. In the city, rangers are notorious for complaining about the conditions of urban life, but they are renowned as outlandish party guests.",
+  "backgrounds": "tracker, bounty hunter, beast slayer, woodsy assassin, orc slayer, and wanderer.",
+  "link": "http://www.13thagesrd.com/classes/ranger/"
+}

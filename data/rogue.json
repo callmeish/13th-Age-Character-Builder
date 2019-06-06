@@ -1,0 +1,9 @@
+{
+  "name": "Rogue",
+  "blurb": "Sneakthieves and guttersnipes, rogues can be cunning or brutal; sometimes both.",
+  "classBonus1": "DEX",
+  "classBonus2": "CHA",
+  "writeup": "Rogues are a mixed bag. Some are thugs who have learned enough tricks to get a step ahead of the other thugs. A few are mad, driven by a reckless sense of adventure. Most are quick with a smile, a blade, and a getaway. They receive various sorts of training: from a spymaster’s school, a thieves’ guild, a cult of the Black dragon, an independent operator, or an ambitious ogre mage. Rogues prefer you never call them assassins. And you know very well what will happen to you if do.",
+  "backgrounds": "street thug, cat burglar, diplomat, professional gambler, courtier, jewel thief, acrobat, con artist, bartender, spy master, pirate, dandy, and rat catcher.",
+  "link": "http://www.13thagesrd.com/classes/rogue/"
+}

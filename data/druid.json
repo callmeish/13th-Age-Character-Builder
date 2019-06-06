@@ -1,0 +1,9 @@
+{
+  "name": "Druid",
+  "blurb": "Versatile guardians of the wilds. No two druids are quite the same.",
+  "classBonus1": "STR, +2 DEX,",
+  "classBonus2": "WIS",
+  "writeup": "Druids are poised between the cycles of nature and the timelines of civilization. It’s true that druids are attuned to the calm rhythms of natural creation, but as mortal humanoids they’re also at home with the savagery of wild nature and the mercilessness of tribal warfare.",
+  "backgrounds": "orc-tribe hunter/gatherer, avalanche prophet, cult zealot, river guide, tribe healer, failed shaman, wild temple priest, mystic waterfall guardian, and raised by wolverines.",
+  "link": "http://www.13thagesrd.com/classes/druid/"
+}

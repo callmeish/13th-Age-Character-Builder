@@ -1,0 +1,9 @@
+{
+  "name": "Monk",
+  "blurb": "Mystics and martial artists who have honed their bodies into living weapons.",
+  "classBonus1": "STR, +2 DEX,",
+  "classBonus2": "WIS",
+  "writeup": "Every monk that joins an adventuring party has a story about why they are not back at the monastery. Some chase a vision, while others have been driven out. For some, it’s a temporary step in their training. For others, it’s a permanent exile. And for a very few, a hard-won escape.",
+  "backgrounds": "holy acolyte, mountain sanctuary guardsman, traveling circus acrobat, river guide, spider-cult assassin, tunnel vermin exterminator, bodyguard, farmer, hallucinogenic mushroom farmer, wild mountain ginseng harvester, traveling tournament organizer, civil rights organizer.",
+  "link": "http://www.13thagesrd.com/classes/monk/"
+}

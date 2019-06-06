@@ -1,0 +1,11 @@
+{
+  "name": "Spiritborn",
+  "blurb": "Half-mortal, half-elemental descendants of spirits.",
+  "raceBonus1": "WIS",
+  "raceBonus2": "CHA",
+  "racePowerName": "Spirit-Form",
+  "racePowerDesc": "Once per battle at the start of your turn, you may let your physical form lapse and become a spirit. Remove yourself from play. While removed from play, you may still affect the world with a manifestation that makes sense for the type of spirit you are (you decide your spirit type when you create your character). For example, you might deal 1d4 X your level damage of the appropriate type to a nearby enemy. Other effects are possible: Speak with you GM, but keep in mind that some conditions like stunned and weakened are much too strong for this power.<br/>At the start of your next turn place yourself someplace nearby your previous location, and you are dazed until the end of that turn because of the transition between worlds",
+  "racePowerAdvFeat": "Once per day when you are targeted by an attack against AC or PD that doesn’t deal force damage, decide that you will take no damage or any other effect from that attack. Once per level, you can use this effect on an attack that does the damage type you inflict in spirit-form without expending your daily use of this feat.",
+  "passiveName": "Spirit's Flesh",
+  "passiveDesc": "When you create your character, you may decide that your character has resist 16+ to a type of damage that makes sense for your character (like cold for a winter spirit). If you do, your character is also vulnerable to force damage."
+}

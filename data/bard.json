@@ -1,0 +1,9 @@
+{
+  "name": "Bard",
+  "blurb": "Arcane tricksters skilled with both blade and song.",
+  "classBonus1": "DEX",
+  "classBonus2": "CHA",
+  "writeup": "If the gods didn’t create the world with a song, that’s sure what it sounds like when you hear a mighty bard sing. Bards travel the world, learning and teaching each other the ancient songs and arcane secrets of a hundred lands. They practice an intuitive and nimble sort of arcane magic, using not merely their minds to cast spells but their hearts. Their spells, their swordplay, and their romances all demonstrate not just skill but a certain poetry. The best bards bring out the best in others, inspiring them to overcome all obstacles and then spreading the story in a victory song. The worst bards are manipulative, seductive egomaniacs.",
+  "backgrounds": "wandering minstrel, cathedral musician, court jester, mercenary, tavern owner, failed hedge wizard, diplomat, spy, royal taster, caravan guide, smuggler, and battle skald.",
+  "link": "http://www.13thagesrd.com/classes/bard/"
+}

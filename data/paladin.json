@@ -1,0 +1,9 @@
+{
+  "name": "Paladin",
+  "blurb": "Blessed knights who smite with holy wrath.",
+  "classBonus1": "STR",
+  "classBonus2": "CHA",
+  "writeup": "In every age, extraordinary men and women have stepped forward to carry the battle flag of justice. By the will of the gods, paladins are both protectors and avengers whose campaigns of awesome justice serve as warnings to any who threaten those under their protection. The people depend on them, lords celebrate them, and monsters hate them. People have never needed paladins more than they do in the 13th Age.",
+  "backgrounds": "city guardsman, combat medic, bodyguard, outlaw hunter, and inquisitor.",
+  "link": "http://www.13thagesrd.com/classes/paladin/"
+}
