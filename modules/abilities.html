@@ -14,7 +14,11 @@
 <body>
   <!-- Main contents -->
   <div class="main">
-    <h1>Ability Score Calculator</h1>
+    <h1>Ability Score Calculator (28-Point Buy)</h1>
+
+    <div class="horz-line"></div>
+
+    <p class="subtitle">New to how the "Point Buy" system works? Did you forget? Check out more information here</p>
 
     <div class="container">
       <div class="ability centered-items row">
@@ -45,187 +49,209 @@
 
       <div class="ability row">
         <div class="centered-items horz-centered col-sm-2">
-          STR<span class="hover-notice" data-toggle="tooltip" data-placement="right" data-html="true" title="
-            <p>
-              Strength<br>  
-              This indicates your physical prowess.
-            </p>
-          ">?</span>
+          <div>
+            STR<span class="hover-notice" data-toggle="tooltip" data-placement="right" data-html="true" title="
+              <p>
+                Strength<br>  
+                This indicates your physical prowess.
+              </p>
+            ">?</span>
+          </div>
         </div>
 
         <div class="col-sm-2">
-          <input type="number" class="form-control" name="str-base" min="8" max="18" step="1" value="8">
+          <input type="number" class="form-control" name="str-base" min="8" max="18" step="1" value="8" onchange="update_stat('str')">
         </div>
 
         <div class="col-sm-2">
-          <input type="text" class="form-control" name="str-race" value="+0" readonly="readonly">
+          <input type="text" class="form-control" name="str-race" value="+0" disabled>
         </div>
         
         <div class="col-sm-2">
-          <input type="text" class="form-control" name="str-class" value="+0" readonly="readonly">
+          <input type="text" class="form-control" name="str-class" value="+0" disabled>
         </div>
 
         <div class="col-sm-2">
-          <input type="number" class="form-control" name="str-total" value="8" readonly="readonly">
+          <input type="number" class="form-control" name="str-total" value="8" disabled>
         </div>
 
         <div class="col-sm-2">
-          <input type="text" class="form-control" name="str-bonus" value="-1" readonly="readonly">
+          <input type="text" class="form-control" name="str-bonus" value="-1" disabled>
         </div>
       </div>
 
       <div class="ability row">
         <div class="centered-items horz-centered col-sm-2">
-          DEX<span class="hover-notice" data-toggle="tooltip" data-placement="right" data-html="true" title="
-            <p>
-              Dexterity<br>  
-              This indicates your agility and finess.
-            </p>
-          ">?</span>
+          <div>
+            DEX<span class="hover-notice" data-toggle="tooltip" data-placement="right" data-html="true" title="
+              <p>
+                Dexterity<br>  
+                This indicates your agility and finess.
+              </p>
+            ">?</span>
+          </div>
         </div>
 
         <div class="col-sm-2">
-          <input type="number" class="form-control" name="dex-base" min="8" max="18" step="1" value="8">
+          <input type="number" class="form-control" style="position: relative" name="dex-base" min="8" max="18" step="1" value="8" onchange="update_stat('dex')">
         </div>
 
         <div class="col-sm-2">
-          <input type="text" class="form-control" name="dex-race" value="+0" readonly="readonly">
+          <input type="text" class="form-control" name="dex-race" value="+0" disabled>
         </div>
         
         <div class="col-sm-2">
-          <input type="text" class="form-control" name="dex-class" value="+0" readonly="readonly">
+          <input type="text" class="form-control" name="dex-class" value="+0" disabled>
         </div>
 
         <div class="col-sm-2">
-          <input type="number" class="form-control" name="dex-total" value="8" readonly="readonly">
+          <input type="number" class="form-control" name="dex-total" value="8" disabled>
         </div>
 
         <div class="col-sm-2">
-          <input type="text" class="form-control" name="dex-bonus" value="-1" readonly="readonly">
+          <input type="text" class="form-control" name="dex-bonus" value="-1" disabled>
         </div>
       </div>
 
       <div class="ability row">
         <div class="centered-items horz-centered col-sm-2">
-          CON<span class="hover-notice" data-toggle="tooltip" data-placement="right" data-html="true" title="
-            <p>
-              Constitution<br>  
-              This indicates your physical resistence and endurance.
-            </p>
-          ">?</span>
+          <div>
+            CON<span class="hover-notice" data-toggle="tooltip" data-placement="right" data-html="true" title="
+              <p>
+                Constitution<br>  
+                This indicates your physical resistence and endurance.
+              </p>
+            ">?</span>
+          </div>
         </div>
 
         <div class="col-sm-2">
-          <input type="number" class="form-control" name="con-base" min="8" max="18" step="1" value="8">
+          <input type="number" class="form-control" name="con-base" min="8" max="18" step="1" value="8" onchange="update_stat('con')">
         </div>
 
         <div class="col-sm-2">
-          <input type="text" class="form-control" name="con-race" value="+0" readonly="readonly">
+          <input type="text" class="form-control" name="con-race" value="+0" disabled>
         </div>
         
         <div class="col-sm-2">
-          <input type="text" class="form-control" name="con-class" value="+0" readonly="readonly">
+          <input type="text" class="form-control" name="con-class" value="+0" disabled>
         </div>
 
         <div class="col-sm-2">
-          <input type="number" class="form-control" name="con-total" value="8" readonly="readonly">
+          <input type="number" class="form-control" name="con-total" value="8" disabled>
         </div>
 
         <div class="col-sm-2">
-          <input type="text" class="form-control" name="con-bonus" value="-1" readonly="readonly">
+          <input type="text" class="form-control" name="con-bonus" value="-1" disabled>
         </div>
       </div>
 
       <div class="ability row">
         <div class="centered-items horz-centered col-sm-2">
-          INT<span class="hover-notice" data-toggle="tooltip" data-placement="right" data-html="true" title="
-            <p>
-              Intelligence<br>  
-              This indicates your mental prowess and knowledge of the arcane.
-            </p>
-          ">?</span>
+          <div>
+            INT<span class="hover-notice" data-toggle="tooltip" data-placement="right" data-html="true" title="
+              <p>
+                Intelligence<br>  
+                This indicates your mental prowess and knowledge of the arcane.
+              </p>
+            ">?</span>
+          </div>
         </div>
 
         <div class="col-sm-2">
-          <input type="number" class="form-control" name="int-base" min="8" max="18" step="1" value="8">
+          <input type="number" class="form-control" name="int-base" min="8" max="18" step="1" value="8" onchange="update_stat('int')">
         </div>
 
         <div class="col-sm-2">
-          <input type="text" class="form-control" name="int-race" value="+0" readonly="readonly">
+          <input type="text" class="form-control" name="int-race" value="+0" disabled>
         </div>
         
         <div class="col-sm-2">
-          <input type="text" class="form-control" name="int-class" value="+0" readonly="readonly">
+          <input type="text" class="form-control" name="int-class" value="+0" disabled>
         </div>
 
         <div class="col-sm-2">
-          <input type="number" class="form-control" name="int-total" value="8" readonly="readonly">
+          <input type="number" class="form-control" name="int-total" value="8" disabled>
         </div>
 
         <div class="col-sm-2">
-          <input type="text" class="form-control" name="int-bonus" value="-1" readonly="readonly">
+          <input type="text" class="form-control" name="int-bonus" value="-1" disabled>
         </div>
       </div>
 
       <div class="ability row">
         <div class="centered-items horz-centered col-sm-2">
-          WIS<span class="hover-notice" data-toggle="tooltip" data-placement="right" data-html="true" title="
-            <p>
-              Wisdom<br>  
-              This indicates your intuition.
-            </p>
-          ">?</span>
+          <div>
+            WIS<span class="hover-notice" data-toggle="tooltip" data-placement="right" data-html="true" title="
+              <p>
+                Wisdom<br>  
+                This indicates your intuition.
+              </p>
+            ">?</span>
+          </div>
         </div>
 
         <div class="col-sm-2">
-          <input type="number" class="form-control" name="wis-base" min="8" max="18" step="1" value="8">
+          <input type="number" class="form-control" name="wis-base" min="8" max="18" step="1" value="8" onchange="update_stat('wis')">
         </div>
 
         <div class="col-sm-2">
-          <input type="text" class="form-control" name="wis-race" value="+0" readonly="readonly">
+          <input type="text" class="form-control" name="wis-race" value="+0" disabled>
         </div>
         
         <div class="col-sm-2">
-          <input type="text" class="form-control" name="wis-class" value="+0" readonly="readonly">
+          <input type="text" class="form-control" name="wis-class" value="+0" disabled>
         </div>
 
         <div class="col-sm-2">
-          <input type="number" class="form-control" name="wis-total" value="8" readonly="readonly">
+          <input type="number" class="form-control" name="wis-total" value="8" disabled>
         </div>
 
         <div class="col-sm-2">
-          <input type="text" class="form-control" name="wis-bonus" value="-1" readonly="readonly">
+          <input type="text" class="form-control" name="wis-bonus" value="-1" disabled>
         </div>
       </div>
 
       <div class="ability row">
         <div class="centered-items horz-centered col-sm-2">
-          CHA<span class="hover-notice" data-toggle="tooltip" data-placement="right" data-html="true" title="
-            <p>
-              Charisma<br>  
-              This indicates your strength of personality and persuasiveness.
-            </p>
-          ">?</span>
+          <div>
+            CHA<span class="hover-notice" data-toggle="tooltip" data-placement="right" data-html="true" title="
+              <p>
+                Charisma<br>  
+                This indicates your strength of personality and persuasiveness.
+              </p>
+            ">?</span>
+          </div>
         </div>
 
         <div class="col-sm-2">
-          <input type="number" class="form-control" name="cha-base" min="8" max="18" step="1" value="8">
+          <input type="number" class="form-control" name="cha-base" min="8" max="18" step="1" value="8" onchange="update_stat('cha')">
         </div>
 
         <div class="col-sm-2">
-          <input type="text" class="form-control" name="cha-race" value="+0" readonly="readonly">
+          <input type="text" class="form-control" name="cha-race" value="+0" disabled>
         </div>
         
         <div class="col-sm-2">
-          <input type="text" class="form-control" name="cha-class" value="+0" readonly="readonly">
+          <input type="text" class="form-control" name="cha-class" value="+0" disabled>
         </div>
 
         <div class="col-sm-2">
-          <input type="number" class="form-control" name="cha-total" value="8" readonly="readonly">
+          <input type="number" class="form-control" name="cha-total" value="8" disabled>
         </div>
 
         <div class="col-sm-2">
-          <input type="text" class="form-control" name="cha-bonus" value="-1" readonly="readonly">
+          <input type="text" class="form-control" name="cha-bonus" value="-1" disabled>
+        </div>
+      </div>
+      
+      <div class="ability row">
+        <div class="col-sm-6"></div>
+        <div class="centered-items horz-centered col-sm-4">
+          Points left:
+        </div>
+        <div class="col-sm-2">
+          <input type="text" class="form-control" name="points" value="0" disabled>
         </div>
       </div>
     </div>
