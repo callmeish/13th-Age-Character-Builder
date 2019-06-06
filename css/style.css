@@ -250,10 +250,24 @@ table td.line {
 
 .centered-items {
   position: relative;
+  display: flex;
   
+  justify-content: center;
+
   align-items: center;
 }
 
 .horz-centered {
   text-align: center;
+}
+
+.horz-line {
+  margin: 10px 0px;
+
+  border-bottom: 1px solid black;
+}
+
+.subtitle {
+  font-size: 11pt;
+  margin: 15px 0px;
 }
